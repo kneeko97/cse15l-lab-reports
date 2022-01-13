@@ -1,8 +1,18 @@
 # Hi Kangaroos
 
-## My CSE15L WI22 website
+## Second heading
 
-**About Me:**
- * I am a math-cs transfer student
- * I was raised in LA
- * My favorite twitch streamer is [HasanAbi](https://www.twitch.tv/hasanabi)
+**List Stuff:**
+ * Number one
+ * Click [Here](https://www.twitch.tv/hasanabi). You wont regret it
+
+-----------------
+**Numerical List:**
+ 1) first
+ 2) second
+ 3) third
+
+```
+Hello, World
+#notes 
+```
