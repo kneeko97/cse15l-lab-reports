@@ -1,6 +1,6 @@
 # Week 2: Lab Report 1
 
-## Tutorial - Getting Started with VSCode and Github
+## Getting Started with VSCode and Github 
 
 ---
 **Step 1 - Download and Install VSCode**
