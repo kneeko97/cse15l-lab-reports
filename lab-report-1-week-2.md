@@ -7,10 +7,11 @@
 
 1. Download VSCode from the following site [https://code.visualstudio.com/]( https://code.visualstudio.com/). Make sure to download the appropreiate version for your given operating system. 
 
+2. Install the application and open it to find an empty window.
 
 ![Image](Download-VSCode.png)
 
-2. Install the application and open it to find an empty window.
+
 
 ![Image](VSCode-Installed.png)
 
@@ -18,7 +19,7 @@
 
 **Step 2 - Remotely Connecting**
 
-1.  UCSD has a host server that students are allowed to access remotely. To access the course-specific account you need to find your assigned email from this[index](https://sdacs.ucsd.edu/~icc/index.php). It may require you to reset your password.
+1.  UCSD has a host server that students are allowed to access remotely. To access the course-specific account you need to find your assigned email from this [index](https://sdacs.ucsd.edu/~icc/index.php). It may require you to reset your password.
 
 2. In your VSCode terminal, call the following command with your newly given email. 
 ``` 
@@ -38,14 +39,14 @@ ssh cs15lwi22aej@ieng6.ucsd.edu
 - ls -a
 - pwd
 
-2. If terminal language is new to you, you are bound to make mistakes but do not get discouraged. This is where the most learning will going to come. Below, you can see the attempts I made at trying out some of the commands.
+2. If terminal language is new to you, you are bound to make mistakes but do not get discouraged. This is where the most learning is going to come. Below, you can see the attempts I made at trying out some commands.
 
 ![Image](Trying-some-commands.png)
 
 
 **Step 4 - Moving Files with scp**
 
-1. To logout of the remote server using this command
+1. To logout of the remote server use this command
 ```
 exit
 ```
@@ -63,24 +64,28 @@ class WhereAmIAgain {
   }
 }
 ```
-
-![Image](WhereAmIAgain.png)
-
 3. Now, we will attempt to move that local file onto the remote server. Type this command from the correct directory.
 ```
 scp WhereAmI.java cs15lwi22aej@ieng6.ucsd.edu:~/
 ```
 
-![Image](Moving-files-scp.png)
-
-4. You'll then pre prompted to input your password again. If it successfully copied onto the server, your terminal should print out the following
-
-![Image](Sucessfully-moved-file.png)
+4. You'll then be prompted to input your password again. If it successfully copied onto the server, your terminal should print out the following
 
 5. You may remotely run and compile the file using this command
 ```
 cp WhereAmIAgain.java OtherMain.java; javac OtherMain.java; java WhereAmIAgain
 ```
+
+![Image](WhereAmIAgain.png)
+
+
+
+![Image](Moving-files-scp.png)
+
+
+![Image](Sucessfully-moved-file.png)
+
+
 
 ![Image](Original-Java-Run.png)
 
@@ -99,9 +104,12 @@ ssh-keygen
 ```
 - Final, press enter and the confirmation of your ssh key will appear
 
-![Image](Setting-SSH-key.png)
 
 2. In order to test the key, log into the remote server and you will notice that you are directly granted access.
+
+![Image](Setting-SSH-key.png)
+
+
 
 ![Image](Successful-login-wout-password.png)
 
@@ -121,9 +129,11 @@ class WhereAmIAgain {
 ```
 2. Now, move the file with scp and notice that the process is a lot faster given your new ssh key.
 
+3. Confirm the changes by running your code again. I suggest using your up key arrow to find the previous code for running and compiling the older version. This function will save you a lot of time moving forward. 
+
 ![Image](Optimizing-Remote-Running.png)
 
-3. Confirm the changes by running your code again. I suggest using your up key arrow to find the previous code for running and compiling the older version. This function will save you a lot of time moving forward. 
+
 
 ![Image](Updated-Java-Run.png)
 
