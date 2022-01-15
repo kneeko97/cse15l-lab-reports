@@ -68,7 +68,6 @@ class WhereAmIAgain {
 ```
 scp WhereAmI.java cs15lwi22aej@ieng6.ucsd.edu:~/
 ```
-
 4. You'll then be prompted to input your password again. If it successfully copied onto the server, your terminal should print out the following
 
 5. You may remotely run and compile the file using this command
