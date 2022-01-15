@@ -8,8 +8,7 @@
 1. Download VSCode from the following site [https://code.visualstudio.com/]( https://code.visualstudio.com/). Make sure to download the appropreiate version for your given operating system. 
 
 
-
-  ![Image](Download-VSCode.png)
+![Image](Download-VSCode.png)
 
 2. Install the application and open it to find an empty window.
 
