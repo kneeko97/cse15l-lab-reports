@@ -5,7 +5,7 @@
 ---
 **Step 1 - Download and Install VSCode**
 
-1. Download VSCode from the following site [https://code.visualstudio.com/]( https://code.visualstudio.com/). Make sure to download the appropreiate version for your given operating system. 
+1. Download VSCode from the following site [https://code.visualstudio.com/]( https://code.visualstudio.com/). Make sure to download the appropriate version for your given operating system. 
 
 2. Install the application and open it to find an empty window.
 
@@ -132,8 +132,6 @@ class WhereAmIAgain {
 3. Confirm the changes by running your code again. I suggest using your up key arrow to find the previous code for running and compiling the older version. This function will save you a lot of time moving forward. 
 
 ![Image](Optimizing-Remote-Running.png)
-
-
 
 ![Image](Updated-Java-Run.png)
 
