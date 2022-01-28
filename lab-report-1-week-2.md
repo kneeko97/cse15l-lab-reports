@@ -101,9 +101,12 @@ class WhereAmIAgain {
   }
 }
 ```
-2. Now, move the file with scp and notice that the process is a lot faster given your new ssh key.
+2. Now that you have a working ssh key, you can move the file to the server and run it remotely using the following one file of code:  
+```
+scp WhereAmIAgain.java cs15lwi22aej@ieng6.ucsd.edu:~/; cd; ssh cs15lwi22aej@ieng6.ucsd.edu "javac OtherMain.java; java WhereAmIAgain"
+```
+
 ![Image](Optimizing-Remote-Running.png)
 
-3. Confirm the changes by running your code again. I suggest using your up key arrow to find the previous code for running and compiling the older version. This function will save you a lot of time moving forward. 
-![Image](Updated-Java-Run.png)
+3. I know I optimized my remote running because I completed the task in 8 keystrokes. I utilized the up arrow, copy paste, and only needed one line. You must separate the commmands with a semicolon and quotation marks. 
 
