@@ -33,14 +33,12 @@ ssh cs15lwi22aej@ieng6.ucsd.edu
 **Step 3 - Trying Terminal Commands**
 
 1.    Now that you are connected to the remote server, this is a good opportunity to play around with some common terminal commands.
-
  ```
  cd
  ls
  ls -a
  pwd
  ```
-
 2.    If terminal language is new to you, you are bound to make mistakes but do not get discouraged. This is where the most learning is going to come. Below, you can see the attempts I made at trying out some commands.
 
 ![Image](Trying-some-commands.png)
@@ -52,9 +50,7 @@ ssh cs15lwi22aej@ieng6.ucsd.edu
 ```
 exit
 ```
-
 2.    In your local computer, create a file called WhereAmIAgain.java and add this code
-
 ```
 class WhereAmIAgain {
   public static void main(String[] args) {
@@ -94,17 +90,15 @@ cp WhereAmIAgain.java OtherMain.java; javac OtherMain.java; java WhereAmIAgain
 **Step 5 - Setting an SSH Key**
 
 1.    To  avoid having to enter your password each time you move files or access the server, we will set up an SSH key. 
-
 - On your local directory type the following command
-    ```
-    ssh-keygen
-    ```
+```
+ssh-keygen
+```
 - Then it will ask for the file in which to save the key. 
-    ```
-    (/Users/<your own>/.ssh/id_rsa): /Users/<your own>/.ssh/id_rsa
-    ```
+```
+(/Users/<your own>/.ssh/id_rsa): /Users/<your own>/.ssh/id_rsa
+```
 - Final, press enter and the confirmation of your ssh key will appear
-
 2. In order to test the key, log into the remote server and you will notice that you are directly granted access.
 
 ![Image](Setting-SSH-key.png)
@@ -116,17 +110,17 @@ cp WhereAmIAgain.java OtherMain.java; javac OtherMain.java; java WhereAmIAgain
 
 **Step 6 - Optimizing Remote Running**
 1. Make a slight change to your local WhereAmIAgain.java file. Here is a quick example 
-    ```
-    class WhereAmIAgain {
-      public static void main(String[] args) {
-        System.out.println(System.getProperty("os.name"));
-        System.out.println(System.getProperty("user.name"));
-        System.out.println(System.getProperty("user.home"));
-        System.out.println(System.getProperty("user.dir"));
-        System.out.println(System.getProperty("os.name")); /*Printing the first line again at the bottom*/
-      }
-    }
-    ```
+```
+class WhereAmIAgain {
+  public static void main(String[] args) {
+    System.out.println(System.getProperty("os.name"));
+    System.out.println(System.getProperty("user.name"));
+    System.out.println(System.getProperty("user.home"));
+    System.out.println(System.getProperty("user.dir"));
+    System.out.println(System.getProperty("os.name")); /*Printing the first line again at the bottom*/
+  }
+}
+```
 2. Now, move the file with scp and notice that the process is a lot faster given your new ssh key.
 
 3. Confirm the changes by running your code again. I suggest using your up key arrow to find the previous code for running and compiling the older version. This function will save you a lot of time moving forward. 
