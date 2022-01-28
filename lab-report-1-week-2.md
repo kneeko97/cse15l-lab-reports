@@ -34,10 +34,12 @@ ssh cs15lwi22aej@ieng6.ucsd.edu
 
 1. Now that you are connected to the remote server, this is a good opportunity to play around with some common terminal commands.
 
-- cd
-- ls
-- ls -a
-- pwd
+ ```
+ cd
+ ls
+ ls -a
+ pwd
+ ```
 
 2. If terminal language is new to you, you are bound to make mistakes but do not get discouraged. This is where the most learning is going to come. Below, you can see the attempts I made at trying out some commands.
 
