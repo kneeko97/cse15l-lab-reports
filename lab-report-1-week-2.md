@@ -12,7 +12,6 @@
 ![Image](VSCode-Installed.png)
 
 
-
 **Step 2 - Remotely Connecting**
 
 1.    UCSD has a host server that students are allowed to access remotely. To access the course-specific account you need to find your assigned email from this [index](https://sdacs.ucsd.edu/~icc/index.php). It may require you to reset your password.
