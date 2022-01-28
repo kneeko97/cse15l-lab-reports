@@ -41,6 +41,7 @@ ssh cs15lwi22aej@ieng6.ucsd.edu
  pwd
  ```
 
+{:start="2
 2.    If terminal language is new to you, you are bound to make mistakes but do not get discouraged. This is where the most learning is going to come. Below, you can see the attempts I made at trying out some commands.
 
 ![Image](Trying-some-commands.png)
@@ -66,6 +67,7 @@ class WhereAmIAgain {
   }
 }
 ```
+{:start="3"}
 3.    Now, we will attempt to move that local file onto the remote server. Type this command from the correct directory.
 ```
 scp WhereAmI.java cs15lwi22aej@ieng6.ucsd.edu:~/
@@ -105,7 +107,7 @@ ssh-keygen
 ```
 - Final, press enter and the confirmation of your ssh key will appear
 
-
+{:start="2"}
 2.    In order to test the key, log into the remote server and you will notice that you are directly granted access.
 
 ![Image](Setting-SSH-key.png)
