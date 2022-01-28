@@ -105,8 +105,6 @@ class WhereAmIAgain {
 ```
 scp WhereAmIAgain.java cs15lwi22aej@ieng6.ucsd.edu:~/; cd; ssh cs15lwi22aej@ieng6.ucsd.edu "javac OtherMain.java; java WhereAmIAgain"
 ```
-
 ![Image](Optimizing-Remote-Running.png)
-
-3. I know I optimized my remote running because I completed the task in 8 keystrokes. I utilized the up arrow, copy paste, and only needed one line. You must separate the commmands with a semicolon and quotation marks. 
+3. I know I optimized my remote running because I completed the task in 8 keystrokes. I utilized the up arrow, copy paste, and only needed one line. You must separate the commands with a semicolon and quotation marks. 
 
