@@ -72,7 +72,7 @@ scp WhereAmI.java cs15lwi22aej@ieng6.ucsd.edu:~/
 ```
 4.    You'll then be prompted to input your password again. If it successfully copied onto the server, your terminal should print out the following
 
-5. You may remotely run and compile the file using this command
+5.    You may remotely run and compile the file using this command
 ```
 cp WhereAmIAgain.java OtherMain.java; javac OtherMain.java; java WhereAmIAgain
 ```
@@ -93,7 +93,7 @@ cp WhereAmIAgain.java OtherMain.java; javac OtherMain.java; java WhereAmIAgain
 
 **Step 5 - Setting an SSH Key**
 
-1. To  avoid having to enter your password each time you move files or access the server, we will set up an SSH key. 
+1.    To  avoid having to enter your password each time you move files or access the server, we will set up an SSH key. 
 
 - On your local directory type the following command
 ```
@@ -106,7 +106,7 @@ ssh-keygen
 - Final, press enter and the confirmation of your ssh key will appear
 
 
-2. In order to test the key, log into the remote server and you will notice that you are directly granted access.
+2.    In order to test the key, log into the remote server and you will notice that you are directly granted access.
 
 ![Image](Setting-SSH-key.png)
 
@@ -116,7 +116,7 @@ ssh-keygen
 
 
 **Step 6 - Optimizing Remote Running**
-1. Make a slight change to your local WhereAmIAgain.java file. Here is a quick example 
+1.    Make a slight change to your local WhereAmIAgain.java file. Here is a quick example 
 ```
 class WhereAmIAgain {
   public static void main(String[] args) {
@@ -128,9 +128,9 @@ class WhereAmIAgain {
   }
 }
 ```
-2. Now, move the file with scp and notice that the process is a lot faster given your new ssh key.
+2.    Now, move the file with scp and notice that the process is a lot faster given your new ssh key.
 
-3. Confirm the changes by running your code again. I suggest using your up key arrow to find the previous code for running and compiling the older version. This function will save you a lot of time moving forward. 
+3.    Confirm the changes by running your code again. I suggest using your up key arrow to find the previous code for running and compiling the older version. This function will save you a lot of time moving forward. 
 
 ![Image](Optimizing-Remote-Running.png)
 
