@@ -3,9 +3,9 @@
 ## Markdown Snippets
 
 ---
-**My Repositories:**
+**My Group's Repository:**
 
-1. [My Repository](https://github.com/kneeko97/markdown-parse.git)
+1. [Link to our repository](https://github.com/kneeko97/markdown-parse.git)
 2. First, lets look at my implementation for adding the snippet tests. 
     ```
     @Test 
@@ -42,13 +42,13 @@
         continue;
     }
     ```
-5. For snippet2, I used jdb for detailed line-by-line debugging. It appears that the last link is not read as a proper link because my program checks  whether there is a openParen directly after the nextCloseBracket. Since this example does not fit that condition, the link is tossed aside. It seems possible to fix the issue in less than 10 lines of code. I would suggest having a counter for how many nextOpenBrackets and nextClosedBrackets exist. Next, we would only want to use the first instance of nextOpenBracket and last instance of nextCloseBracket. After that, we could effectively use our current checker on whether the character after nextCloseBracket is an openParen or not. 
-
+5. For snippet2, I used jdb for detailed line-by-line debugging. It appears that my implementation does not
+recognize that \[ and \] are characters rather than open and closed brackets. I believe I could fix this issue in less than 10 lines of code. I would need to check whether my open and closed brackets have a backslash infront of their them. If they do, then I would not consider them as nextOpenBracket or nextCloseBracket and rather continue my search after that index. 
 6. Snippet3 requires no changes to the code.
 
 
-**Other Group Repository**
-1. [Their repository link](https://github.com/atruong39/markdown-parse.git)
+**Other Group's Repository**
+1. [Link to their repository](https://github.com/atruong39/markdown-parse.git)
 
 2. I used the same implementation for the other groups MarkdownParseTest.java file
     ```
