@@ -3,14 +3,10 @@
 ## Markdown Snippets
 
 ---
-**Repositories:**
+**My Repositories:**
 
 1. [My Repository](https://github.com/kneeko97/markdown-parse.git)
-2. [Other Group  Repository](https://github.com/atruong39/markdown-parse/blob/main/MarkdownParse.javae)
-
-**MarkdownParseTest.java**
-
-1. First, lets look at my implementation for adding snippet tests. 
+2. First, lets look at my implementation for adding snippet tests. 
     ```
     @Test 
     public void snippet1() throws IOException{
@@ -33,11 +29,13 @@
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
     ```
-My snippet3 test passed but the first two failed. Lets take a look at the test failure output.
-![snippet1 and snippet2 failure](mySnippetFailure.png)
+3. My snippet3 test passed but the first two failed. Lets take a look at the test failure output.
+    ![snippet1 and snippet2 failure](mySnippetFailure.png)
 
+**Other Group Repository**
+1. [Their repository link](https://github.com/atruong39/markdown-parse.git)
 
-2. Second, I used the same implementation for the other groups MarkdownParseTest.java file
+2. I used the same implementation for the other groups MarkdownParseTest.java file
     ```
     @Test 
     public void snippet1() throws IOException{
@@ -60,5 +58,5 @@ My snippet3 test passed but the first two failed. Lets take a look at the test f
         assertEquals(expect, MarkdownParse.getLinks(contents));
     }
     ```
-None of their tests passed. Lets take a look at the test failure output.
-![snippet1, snippet2, and snippet3 failure message](otherSnippetFailure.png)
+3. None of their tests passed. Lets take a look at the test failure output.
+    ![snippet1, snippet2, and snippet3 failure message](otherSnippetFailure.png)
