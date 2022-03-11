@@ -75,6 +75,20 @@
     ```
 3. None of their tests passed. Lets take a look at the test failure output.
     ![snippet1, snippet2, and snippet3 failure message](otherSnippetFailure.png)
-4. 
-5.
-6. 
+4. Unfortunately, I am not knowledgable on String regex and do not know how to fix the following code: 
+    ```
+    ArrayList<String> toReturn = new ArrayList<>();
+        String regex = "(?<!!)\\[.+\\]\\(\\h*(\\S+)\\h*\\)";
+        Matcher matcher = Pattern.compile(regex).matcher(markdown);
+
+        while(matcher.find()) {
+            toReturn.add(matcher.group(1).replaceAll(" ", ""));
+        }
+
+        return toReturn;
+    ```
+    I'm certain that the original author of the code could fix all failed snippet tests in less than 10 lines. They could potentially even fix it in a few lines total. However, if I were to fix the issues it would require significantly more than 10 lines because I would have to implement all of the code from our more typical approach.
+
+    From the failure output, I noticed that their program extracted 4 links from snippet 1 whereas mine only extracted 3. So, it appears that the their code is successful in finding links given a target syntax. However, they would need to add further restirctions to limit how many links should be extracted. The same sentiment applies to fixing the issues in snippet2.
+
+    Interestingly, for snippet3, it did not register any links. I assume this is because this snippet included examples that significatly differed from the target syntax of proper links.
