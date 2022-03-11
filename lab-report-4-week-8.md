@@ -43,7 +43,7 @@
     }
     ```
 5. For snippet2, I used jdb for detailed line-by-line debugging. It appears that my implementation does not
-recognize that \[ and \] are characters rather than open and closed brackets. I believe I could fix this issue in less than 10 lines of code. I would need to check whether my open and closed brackets have a backslash infront of their them. If they do, then I would not consider them as nextOpenBracket or nextCloseBracket and rather continue my search after that index. 
+recognize that "backslash[" and "backslash]" are characters rather than open and closed brackets. I believe I could fix this issue in less than 10 lines of code. I would need to check whether my open and closed brackets have a backslash infront of their them. If they do, then I would not consider them as nextOpenBracket or nextCloseBracket and rather continue my search after that index. 
 6. Snippet3 requires no changes to the code.
 
 
