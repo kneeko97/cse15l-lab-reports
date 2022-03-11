@@ -38,4 +38,5 @@
 
 1. It appears that my implemenation was correct because proper link syntax should not allow for a space between the nextCloseBracket and openParen.
 
-2. 
+2. To fix this, Joe should implement a checker to ensure that openParen is only one index away from nextCloseBracket. This could be added to his code after he finds openParen.
+    ![fix second diff](fixSecondDiff.png)
