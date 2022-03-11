@@ -42,7 +42,7 @@
         continue;
     }
     ```
-5. For snippet2, I used jdb for detailed line-by-line debugging. It appears that the last link is not read as a proper link because my program checks  whether there is a openParen directly after the nextCloseBracket. Since this example does not fit that condition, the link is tossed aside. It seems possible to fix the issue in less than 10 lines of code. I would suggest having a counter for how many nextOpenBrackets and nextClosedBrackets exist. Then we would want to use the first instance of nextOpenBracket and last instance of nextCloseBracket as our correct format. Then we could effectively our current checker on whether the character after nextCloseBracket is an openParen or not. 
+5. For snippet2, I used jdb for detailed line-by-line debugging. It appears that the last link is not read as a proper link because my program checks  whether there is a openParen directly after the nextCloseBracket. Since this example does not fit that condition, the link is tossed aside. It seems possible to fix the issue in less than 10 lines of code. I would suggest having a counter for how many nextOpenBrackets and nextClosedBrackets exist. Next, we would only want to use the first instance of nextOpenBracket and last instance of nextCloseBracket. After that, we could effectively use our current checker on whether the character after nextCloseBracket is an openParen or not. 
 
 6. Snippet3 requires no changes to the code.
 
@@ -75,6 +75,6 @@
     ```
 3. None of their tests passed. Lets take a look at the test failure output.
     ![snippet1, snippet2, and snippet3 failure message](otherSnippetFailure.png)
-4.
+4. 
 5.
 6. 
