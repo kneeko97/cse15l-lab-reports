@@ -26,9 +26,15 @@
 ![Test 494](test494.png)
 
 
-1. Based on the contents of test file 494, it appears that Joe's implementation was correct. My code did not register that the backslash before the first instance of the openParen meant that it was to be read as a character rather than link syntax.
+1. Based on the contents of test file 494, the expected output should be [\(foo\)] . Thus it appears that neither implementation was correct.  
 
-2. I would have to implement a checker that searches for a backslash before all of my open/close brackets and paretheses.
+2. My code did not register that the backslash before the first instance of openParen meant that it should be read as a character rather than link syntax.
+
+3. Joe's code does understand the utility of backslash, however, it did not remove them from the overall output. In an ideal markdown program, the output should just be (foo)
+
+4. I would have to implement a checker that searches for a backslash before all of my open/close brackets and paretheses.
+
+5. We both need a method that extracts backslashes before printing out the output.
 
 **Second Difference:**
 
@@ -36,7 +42,9 @@
 
 ![Test 510](test510.png)
 
-1. It appears that my implemenation was correct because proper link syntax should not allow for a space between the nextCloseBracket and openParen.
+1. According to the contents of test file 510, the expected output is [/uri].
 
-2. To fix this, Joe should implement a checker to ensure that openParen is only one index away from nextCloseBracket. This could be added to his code after he finds openParen.
+2. It appears that my implemenation was correct because proper link syntax should not allow for a space between the nextCloseBracket and openParen.
+
+3. To fix this, Joe should implement a checker to ensure that openParen is only one index away from nextCloseBracket. This could be added to his code after he finds openParen.
     ![fix second diff](fixSecondDiff.png)
